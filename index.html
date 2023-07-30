@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="meuHtml"><!--class="light"-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu projeto</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/fire_favicon.png">
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          id="avatar"
+          src="./assets/avatar.png"
+          alt="Foto de Mayk Brito, com óculos, sem barba, de casaco preto, e com fundo em degradê horizontal nas cores roxo e azul."
+        />
+        <p id="profile-nickname">@maykbrito</p>
+      </div>
+      <div id="switch">
+        <button id="theme_switcher"> </button>
+        <span id="button_track"></span>
+      </div>
+      <ul id="itemslist">
+        <li>
+          <a href="https://www.rocketseat.com.br/nlw" target="_blank"
+            >Inscreva-se no NLW</a
+          >
+        </li>
+        <li>
+          <a href="#" target="_blank">Baixe o meu e-book</a>
+        </li>
+        <li>
+          <a href="https://github.com/maykbrito" target="_blank"
+            >Veja o meu portfólio</a
+          >
+        </li>
+        <li>
+          <a href="https://www.rocketseat.com.br/explorer" target="_blank"
+            >Conheça o Explorer</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+
+      <a href="https://github.com/maykbrito" target="_blank" ><ion-icon name="logo-github"></ion-icon></a>
+        </ion-icon>
+        
+      <a href="https://www.instagram.com/maykbrito/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        
+      <a href="https://www.youtube.com/rocketseat" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+
+      <a href="https://br.linkedin.com/in/maykbrito/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+      </div> <!--Fechamento do Social Links-->
+      <footer>
+        <p>Feito com <ion-icon name="heart"></ion-icon> pela <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>.</p>
+      </footer>
+    </div>
+    <!--Fechamento do container-->
+
+    <!--Começo do Script para injeção do framework de ícones-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!--Fim do script para injeção do framework de ícones-->
+    <!--Script para alteração do modo escuro-->
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>

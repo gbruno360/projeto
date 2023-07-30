@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --stroke-color-hover: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.2);
+  --icon-bg-color-hover: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/MoonStars.svg);
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --stroke-color-hover: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.2);
+  --icon-bg-color-hover: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/Sun.svg);
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  margin: 56px auto 0px;
+  width: 360px;
+}
+
+/*Perfil: imagem, link do Instagram e botão on/off*/
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+/*Profile*/
+
+#profile img {
+  height: 112px;
+}
+
+#profile-nickname {
+  display: block;
+  margin: 16px 0px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/*Switch*/
+
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+#switch:hover {
+  cursor: pointer;
+}
+
+#switch button#theme_switcher {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+#switch button#theme_switcher:hover {
+  cursor: pointer;
+}
+
+.light #switch button#theme_switcher {
+  right: 0;
+  left: unset;
+}
+
+#switch span#button_track {
+  display: block;
+  width: 64px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Links */
+
+ul#itemslist {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+}
+
+#itemslist li {
+  border-radius: 8px;
+}
+#itemslist li a {
+  display: flex;
+  font-weight: 500;
+  padding: 16px 24px;
+  text-align: center;
+  justify-content: center;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  transition: background 0.2s;
+}
+
+#itemslist li a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--stroke-color-hover);
+}
+
+/* Social Links*/
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+}
+
+#social-links ion-icon {
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+#social-links ion-icon:hover {
+  background: var(--icon-bg-color-hover);
+}
+
+footer {
+  padding: 24px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer p ion-icon {
+  vertical-align: middle;
+}
+footer p a {
+  text-decoration: underline;
+}
